@@ -1,0 +1,19 @@
+{
+    "pedidos": [
+        {
+            "id": "123",
+            "cliente": "jose",
+            "idade": 70
+        },
+        {
+            "id": "1234",
+            "cliente": "maria",
+            "idade": 50
+        },
+        {
+            "id": "12345",
+            "cliente": "joao",
+            "idade": 55
+        }
+    ]
+}
