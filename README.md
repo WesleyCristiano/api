@@ -53,6 +53,11 @@
 - **`POST /escolas`** : criar `escolas`
 
 
+## Schema Visual do [Banco de Dados](https://whimsical.com/PZSTqGP7fPPR9m2iDRe66A)
+
+
+
+
 
 
 
