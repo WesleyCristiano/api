@@ -1,38 +1,68 @@
 {
-    "pedidos": [
+    "schools": [
         {
-            "id": "123",
-            "cliente": "jose",
-            "idade": 70
+            "id": "08322e76-3a60-4025-9122-47d48e08b26b",
+            "name": "Escola Adventista",
+            "endereco": {
+                "id": "322647ed-70d8-48e6-9db0-3b2a0a9c5c93",
+                "cep": "79822315",
+                "logradouro": "Rua Onofre Pereira de Matos",
+                "numero": "970",
+                "bairro": "Centro",
+                "cidade": "Dourados",
+                "uf": "MS"
+            }
         },
-        {
-            "id": "1234",
-            "cliente": "maria",
-            "idade": 50
-        },
-        {
-            "id": "12345",
-            "cliente": "joao",
-            "idade": 55
+         {
+            "id": "8ef7895a-4089-48d1-9ba0-d8442572aad6",
+            "name": "Escola Joaquim Murtinho",
+            "endereco": {
+                "id": "d2a14a48-d53c-497a-898d-e50f69d62188",
+                "cep": "79801017",
+                "logradouro": "Rua Onofre Pereira de Matos ",
+                "numero": "1842",
+                "bairro": "Centro",
+                "cidade": "Dourados",
+                "uf": "MS"
+            }
         }
     ],
-    "pedidos2": [
+    "lists": [
         {
-            "id": "123",
-            "cliente": "jose",
-            "idade": 70
-        },
-        {
-            "id": "1234",
-            "cliente": "maria",
-            "idade": 50
-        },
-        {
-            "id": "12345",
-            "cliente": "joao",
-            "idade": 55
+            "id": "15888f6f-7130-4ade-9efc-f284a644a695",
+            "grade_name": "4º ano",
+            "school": {
+                "id": "8ef7895a-4089-48d1-9ba0-d8442572aad6",
+                "name": "Escola Joaquim Murtinho",
+                "endereco": {
+                    "id": "d2a14a48-d53c-497a-898d-e50f69d62188",
+                    "cep": "79801017",
+                    "logradouro": "Rua Onofre Pereira de Matos ",
+                    "numero": "1842",
+                    "bairro": "Centro",
+                    "cidade": "Dourados",
+                    "uf": "MS"
+                    }
+            },
+            "list_items_categories": [
+                {
+                    "id": "ac1ab198-780d-4c1d-aa2a-3b62cd35c64c",
+                    "category_id": "fcd82911-d579-47c9-b97d-0c0de1bca022", 
+                },
+                {
+                    "id": "d478a43f-6e0f-4917-99d3-1cc4d0a99066",
+                    "category_id": "a3130d03-cb64-4fed-a5db-5f944497f390", 
+                },
+                {
+                    "id": "21c3a835-0744-4015-a661-8cfde99e0eff",
+                    "category_id": "de1a7280-5f01-4718-90bd-9febd7795bb9",
+                },
+                {
+                    "id": "b01a75b3-d7ed-44fb-9423-1b221a06dd9a",
+                    "category_id": "12f7b075-fcb5-4d32-ab7a-c191cb18bfb3",  
+                }
+            ]
         }
     ]
-
 }
 
