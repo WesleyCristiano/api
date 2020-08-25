@@ -48,8 +48,11 @@
     **2)** Ser capaz de imprimir o pedido pedido para a separação (relatório pdf)
 
 
+## Rotas da Aplicação
 
-## Requisitos da aplicação
+- **`POST /escolas`** : criar `escolas`
+
+
 
 
 
