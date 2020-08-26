@@ -83,9 +83,11 @@
 
       **Regras de Negócio**
       
-   - **2)** Carrinho do compra
+   - **3)** Carrinho do compra
    
       - [ ] O usuário deve ser capaz de conferir os produtos que foram adicionados no carrinho com suas respectivas quantidades, foto em miniatura, preço e valor total do pedido.
+      
+      - [ ] O usuário deve ser capaz de escolher outros produtos que lhe serão sugeridos (mochilas, estojos e outros produtos de maior valor agregado)
       
       - [ ] O usuário deverá ser capaz de alterar as quantidades dos produtos da lista.
       
@@ -95,15 +97,48 @@
       
       - [ ] O usuário deve ser capaz de através de seu CEP verificar a disponibilidade de entrega do produto ou retirada na loja, com o respectivo valor da entrega.
       
-      - [ ] Na listagem de produtos do carrinho, o usuário deverá ser capaz de ir para o check-out.
+      - [ ] Na listagem de produtos do carrinho, o usuário deverá ser capaz de clicar em um botão e ser direcionado para o check-out (página de identificação ou pagamento).
       
       **Requisitos Não-Funcionais**
 
       **Regras de Negócio**
       
-   - **3)** Ckec-out
+   - **4)** Ckeck-out (identificação e posterior pagamento)
    
-      - [ ] O usuário deve ser capaz de conferir os produtos que foram adicionados no carrinho com suas respectivas quantidades, foto em miniatura, preço e valor total do pedido.
+      - [ ] A partir da página de identificação/pagamento o usuário deve ser capaz de identificar atráves do header em que fase da compra se encontra.
+   
+      - [ ] Caso esteja logado, o usuário deve ser capaz de ser redirecionado para a página de pagamento.
+      
+      - [ ] Caso não esteja logado, o usuário deve ser capaz de realizar login na aplicação com seu email e senha.
+      
+      - [ ] Caso não possua conta, o usuário deve ser capaz de criar um conta com seus dados de email, cpf, senha, telefone, endereço etc.
+      
+      - [ ] Após o login(autorização) ou cadastro de usuário, o usuário deve ser redirecionado para a página de pagamento onde:
+      
+         1. Confirmará e/ou alterá o endereço de entrega
+         
+         2. Confirmará e/ou alterá as opções de entrega (retirada ou entrega)
+         
+         3. Poderá vizualizar a lista de produtos escolhidos (breve descrição sem possibiidade de voltar para atualizar)
+         
+         4. Escolherá a forma de pagamento, informando os dados do cartão de crédito se for o caso.
+            
+      **Requisitos Não-Funcionais**
+
+      **Regras de Negócio**
+      
+      - [ ] Não devem sem apresentados nenhuma informação que distraia o cliente a partir da página de identificação/pagamento (sem menus/buscas nos headers ou ofertas avulsas)
+      
+   - **5)** Recuperação de senha
+   
+      - [ ] Caso tenha esquecido sua senha, o usuário deve ser capaz de solicitar uma nova senha
+      
+      - [ ] O usuário deve receber um email com instruções de recuperação de senha
+      
+      - [ ] O usuário deve poder resetar sua senha
+
+   
+
       
       
       
