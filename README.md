@@ -44,6 +44,12 @@
 ## Schema Visual do [Banco de Dados](https://whimsical.com/PZSTqGP7fPPR9m2iDRe66A)
 
 
+## Rotas da aplicação
+
+   - **`POST/products/`**: Esta rota deve fazer a o cadastro de produtos da aplicação.
+
+
+
      
       
 
