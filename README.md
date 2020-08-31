@@ -35,11 +35,11 @@
 
 - Ao cliente finalizar o pedido o lojista:
 
-    **1)** vizualizará o pedido em sua Dashoboard com os possíveis status(Pedido Recebido ou Pagamento confirmado )
+    **1)** vizualizará o pedido em sua Dashoboard com os possíveis status(Pedido Recebido ou Pagamento confirmado
 
     **2)** após a confirmação do pagamento, imprimirá o pedido para a separação (relatório pdf).
 
-    **2)** Realizará a entrega do pedido (ou retirada)
+    **3)** Realizará a entrega do pedido (ou retirada)
 
 ## Schema Visual do [Banco de Dados](https://whimsical.com/PZSTqGP7fPPR9m2iDRe66A)
 
