@@ -10,4 +10,4 @@ export default interface IStoreRepository{
     findStoreWithSameData(data: IFindStoreWithSameDataDTO): Promise<Store | undefined>
     findAllInCity(data: IFindAllInCityDTO): Promise<Store[]|undefined>
 
-}
+}   

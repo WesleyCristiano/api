@@ -10,7 +10,7 @@ import IFindAllInCityDTO from '@modules/stores/dtos/IFindAllInCityDTO'
 export default class FakeStoreRepository implements IStoreRepository {
     private stores: Store[] = []
     
-    public async create({company_name, cnpj,email, phone_number,password,address}: ICreateStoreDTO): Promise<Store>{
+    public async create({company_name, logo, cnpj,email, phone_number,password,address}: ICreateStoreDTO): Promise<Store>{
         const store = new Store()
 
         const storeAdress = new Address()
@@ -24,6 +24,9 @@ export default class FakeStoreRepository implements IStoreRepository {
         store.id = uuid()
         store.company_name = company_name
         store.cnpj = cnpj
+        if(logo) {
+            store.logo = logo
+        }
         store.email = email
         store.password = password
         store.phone_number = phone_number

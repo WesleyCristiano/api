@@ -47,10 +47,7 @@ class CreateStoreService{
 
         const allStoresIncity = await this.storeRepository.findAllInCity({
             city: address.city, state: address.state})
-        
-        console.log(allStoresIncity);
-        
-
+    
         if(allStoresIncity){
             allStoresIncity.forEach(store=>{
                 if(store.company_name.toUpperCase() == company_name.toUpperCase()){

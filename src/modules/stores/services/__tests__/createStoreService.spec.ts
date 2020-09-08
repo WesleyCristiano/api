@@ -15,7 +15,7 @@ describe('CreateStore', ()=>{
             fakeStoreRepository, fakeAddressRepository)
         })
 
-    it('should be able to create a new store withyn', async ()=>{
+    it('should be able to create a new store', async ()=>{
 
         const store = await createStoreService.execute({
             company_name: 'Minha loja',
