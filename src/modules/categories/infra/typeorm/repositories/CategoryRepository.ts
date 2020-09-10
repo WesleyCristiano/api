@@ -18,6 +18,11 @@ class CategoryRepository implements ICategoryRepository{
         return category;
     }
 
+    public createWithoutPromise({name}: ICreateCategoryDTO): Category{
+        const category = this.ormRepository.create({name})
+        return category
+    }
+
     public async findByName(name: string): Promise<Category | undefined>{
         const category = await this.ormRepository.findOne({
             where: {name}

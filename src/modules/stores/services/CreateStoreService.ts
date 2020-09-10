@@ -23,8 +23,7 @@ interface IRequest{
     password: string;
     phone_number: string;
     address: IAddressRequest;
-}
-
+}    
 @injectable()
 class CreateStoreService{
 

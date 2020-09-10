@@ -46,7 +46,13 @@
 
 ## Rotas da aplicação
 
-   - **`POST/products/`**: Esta rota deve fazer a o cadastro de produtos da aplicação.
+   - **`POST/products/`**: Esta rota deve fazer o cadastro de produtos da aplicação.
+
+   - **`POST/stores/`**: Esta rota deve fazer o cadastro da papelarias.
+
+   - **`POST/categories/`**: Esta rota deve fazer o cadastro de categorias da aplicação
+
+   - **`POST/lists/`**: Esta rota deve fazer o cadastro de listas de materiais.
 
 
 

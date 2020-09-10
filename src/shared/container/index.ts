@@ -8,6 +8,12 @@ import ICategoryRepository from '@modules/categories/repositories/ICategoryRepos
 import CategoryRepository from '@modules/categories/infra/typeorm/repositories/CategoryRepository'
 import IProductRepository from '@modules/products/repositories/IProductRepository'
 import ProductRepository from '@modules/products/infra/typeorm/repositories/ProductRepository'
+import IItemRepository from '@modules/items/repositories/IItemRepository'
+import ItemRepository from '@modules/items/infra/typeorm/repository/ItemRepository'
+import IListRepository from '@modules/lists/repositories/IListRepository'
+import ListRepository from '@modules/lists/infra/typeorm/repository/ListRepository'
+import ISchoolRepository from '@modules/schools/repositories/ISchoolRepository'
+import SchoolRepository from '@modules/schools/infra/typeorm/repositories/SchoolRepository'
 
 
 container.registerSingleton<IStoreRepository>(
@@ -21,3 +27,12 @@ container.registerSingleton<ICategoryRepository>(
 
 container.registerSingleton<IProductRepository>(
     'ProductRepository', ProductRepository)
+
+container.registerSingleton<IItemRepository>(
+    'ItemRepository', ItemRepository)
+
+container.registerSingleton<IListRepository>(
+    'ListRepository', ListRepository)
+
+container.registerSingleton<ISchoolRepository>(
+    'SchoolRepository', SchoolRepository)

@@ -17,6 +17,14 @@ class FakeCategoryRepository implements ICategoryRepository{
         return category;
     }
 
+    public createWithoutPromise({name}: ICreateCategoryDTO): Category{
+        const category = new Category()
+        category.id = uuid()
+        category.name = name
+        this.categories.push(category)
+        return category;
+    }
+
     public async findByName(name:string): Promise<Category |undefined>{
         return this.categories.find(category=> category.name ===name)
     }
