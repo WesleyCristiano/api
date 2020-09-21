@@ -1,68 +1,79 @@
 {
-    "schools": [
-        {
-            "id": "08322e76-3a60-4025-9122-47d48e08b26b",
-            "name": "Escola Adventista",
-            "endereco": {
-                "id": "322647ed-70d8-48e6-9db0-3b2a0a9c5c93",
-                "cep": "79822315",
-                "logradouro": "Rua Onofre Pereira de Matos",
-                "numero": "970",
-                "bairro": "Centro",
-                "cidade": "Dourados",
-                "uf": "MS"
-            }
-        },
-         {
-            "id": "8ef7895a-4089-48d1-9ba0-d8442572aad6",
-            "name": "Escola Joaquim Murtinho",
-            "endereco": {
-                "id": "d2a14a48-d53c-497a-898d-e50f69d62188",
-                "cep": "79801017",
-                "logradouro": "Rua Onofre Pereira de Matos ",
-                "numero": "1842",
-                "bairro": "Centro",
-                "cidade": "Dourados",
-                "uf": "MS"
-            }
-        }
-    ],
-    "lists": [
-        {
-            "id": "15888f6f-7130-4ade-9efc-f284a644a695",
-            "grade_name": "4º ano",
-            "school": {
-                "id": "8ef7895a-4089-48d1-9ba0-d8442572aad6",
-                "name": "Escola Joaquim Murtinho",
-                "endereco": {
-                    "id": "d2a14a48-d53c-497a-898d-e50f69d62188",
-                    "cep": "79801017",
-                    "logradouro": "Rua Onofre Pereira de Matos ",
-                    "numero": "1842",
-                    "bairro": "Centro",
-                    "cidade": "Dourados",
-                    "uf": "MS"
-                    }
-            },
-            "list_items_categories": [
-                {
-                    "id": "ac1ab198-780d-4c1d-aa2a-3b62cd35c64c",
-                    "category_id": "fcd82911-d579-47c9-b97d-0c0de1bca022", 
-                },
-                {
-                    "id": "d478a43f-6e0f-4917-99d3-1cc4d0a99066",
-                    "category_id": "a3130d03-cb64-4fed-a5db-5f944497f390", 
-                },
-                {
-                    "id": "21c3a835-0744-4015-a661-8cfde99e0eff",
-                    "category_id": "de1a7280-5f01-4718-90bd-9febd7795bb9",
-                },
-                {
-                    "id": "b01a75b3-d7ed-44fb-9423-1b221a06dd9a",
-                    "category_id": "12f7b075-fcb5-4d32-ab7a-c191cb18bfb3",  
-                }
-            ]
-        }
+    "list": [
+      {
+        "id": "d96d99de-821a-467b-a06b-321f16d4e08a",
+        "school_id": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "grade_name": "1 ano",
+        "created_at": "2020-09-14T22:52:23.173Z",
+        "updated_at": "2020-09-14T22:52:23.173Z",
+        "school": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "items": [
+          "1da69995-61b3-4e9e-9d46-eaf309d629fe",
+          "984c22a3-dc77-4e8d-a88e-86147b4f1ae3",
+          "959a7a7b-3159-460e-8843-64cf729a0e79",
+          "e39dd2fb-50a4-48d2-a0a5-18bdcb98a599",
+          "4b1f808a-18a0-484e-969c-b66d9b152011"
+        ]
+      },
+      {
+        "id": "d6929ec6-ca73-4bd6-a597-71e439a1b634",
+        "school_id": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "grade_name": "2 ano",
+        "created_at": "2020-09-14T22:52:32.968Z",
+        "updated_at": "2020-09-14T22:52:32.968Z",
+        "school": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "items": [
+          "e7f44c69-dcad-4704-b343-48bcbde47390",
+          "ed9b997e-ff9f-455c-9210-9d4b20ddc64a",
+          "4999c30f-ee8e-4ff2-a141-645dbb11b7f4",
+          "f4337d0a-6a88-4e16-bd57-d36cd852b7bf",
+          "ace0f895-9bed-470e-a04d-4a787bd64979"
+        ]
+      },
+      {
+        "id": "672cb0dc-cc8a-42bf-8978-5879c6419cb8",
+        "school_id": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "grade_name": "3 ano",
+        "created_at": "2020-09-14T23:03:54.589Z",
+        "updated_at": "2020-09-14T23:03:54.589Z",
+        "school": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "items": [
+          "06994b41-142b-4234-bf06-ddfbf00b6d6f",
+          "dd682e27-e39e-4840-a91e-ff572be86756",
+          "8337af34-c546-463a-8e9c-1cffc530acbf",
+          "dc5d4d0c-fdac-473f-bf5e-24273de1d693",
+          "9a41d01d-5b73-4a87-93c8-575e3fd10927"
+        ]
+      },
+      {
+        "id": "7bdc01b3-8ac6-4d5f-ae80-026d8c2e8ccc",
+        "school_id": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "grade_name": "4 ano",
+        "created_at": "2020-09-15T18:52:56.808Z",
+        "updated_at": "2020-09-15T18:52:56.808Z",
+        "school": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "items": [
+          "75a5c4db-558c-4b4a-ac92-cd3fc5ade206",
+          "dcebfca6-8db3-46c6-9222-43bf19a5a9ec",
+          "dab6a767-d3ce-4db9-9203-b4e6c26a16fc",
+          "8b3bd8ab-d459-481c-a009-c0300d509682",
+          "af57d206-e297-4bfd-b0c5-e502ddff822c"
+        ]
+      },
+      {
+        "id": "752af13b-f898-43b9-bbdd-7ab2c20f2473",
+        "school_id": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "grade_name": "5 ano",
+        "created_at": "2020-09-15T19:19:15.345Z",
+        "updated_at": "2020-09-15T19:19:15.345Z",
+        "school": "603ab30c-9c26-4805-ad44-b18cd06ec2f7",
+        "items": [
+          "2acaab17-3781-407e-ba24-5754a2551a38",
+          "fe5619e4-be12-42a8-a823-f709dc8f0806",
+          "76b4dcee-9f8b-46ce-a5cd-df06c7143dad",
+          "9e677bc7-92d6-4ec2-8b78-c5f3be92a405",
+          "f12c1e05-f621-47a2-a4e2-7eb080f1184e"
+        ]
+      }
     ]
-}
-
+    }
