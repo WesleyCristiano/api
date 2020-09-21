@@ -9,5 +9,6 @@ export default interface IStoreRepository{
     create(data:ICreateStoreDTO): Promise<Store>
     findStoreWithSameData(data: IFindStoreWithSameDataDTO): Promise<Store | undefined>
     findAllInCity(data: IFindAllInCityDTO): Promise<Store[]|undefined>
+    findAllAddress(): Promise<Store[]>;
 
 }   

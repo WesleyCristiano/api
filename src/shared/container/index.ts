@@ -1,4 +1,5 @@
 import { container} from 'tsyringe'
+import '@shared/container/providers'
 
 import IStoreRepository from '@modules/stores/repositories/IStoreRepository'
 import StoreRepository from '@modules/stores/infra/typeorm/repositories/StoreRepository'
@@ -14,6 +15,8 @@ import IListRepository from '@modules/lists/repositories/IListRepository'
 import ListRepository from '@modules/lists/infra/typeorm/repository/ListRepository'
 import ISchoolRepository from '@modules/schools/repositories/ISchoolRepository'
 import SchoolRepository from '@modules/schools/infra/typeorm/repositories/SchoolRepository'
+import IImageProductRepository from '@modules/products/repositories/IImageProductRepository'
+import ImageProductRepository from '@modules/products/infra/typeorm/repositories/ImageProductRepository'
 
 
 container.registerSingleton<IStoreRepository>(
@@ -36,3 +39,7 @@ container.registerSingleton<IListRepository>(
 
 container.registerSingleton<ISchoolRepository>(
     'SchoolRepository', SchoolRepository)
+
+container.registerSingleton<IImageProductRepository>(
+        'ImageProductRepository', ImageProductRepository)
+    

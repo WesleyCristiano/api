@@ -40,5 +40,30 @@ class FakeProductRepository implements IProductRepository{
         const product = this.products.find(product => product.name === name && product.store_id === store_id)
         return product
     }
+
+    public async findByCategories(categories: string[]): Promise<Product[]>{
+        const prods: Product[] = []
+
+        this.products.forEach(product=> 
+            product.categories.forEach(category=>
+                {
+                    if(categories.includes(category.name) && !prods.includes(product)){
+                        prods.push(product)
+                    }
+                }
+            ))
+        return prods
+
+    }
+
+    public async findOne(product_id:string): Promise<Product | undefined>{
+        const product = this.products.find(product=>product.id === product_id)
+        return product
+    }
+    public async save(product: Product): Promise<Product>{
+        const findIndex = this.products.findIndex(prod=> product.id === prod.id)
+        this.products[findIndex] = product
+        return product    
+    }
 }
 export default FakeProductRepository

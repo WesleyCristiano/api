@@ -18,17 +18,14 @@ class ItemRepository implements IItemRepository{
         await this.ormRepository.save(item)
         return item
     }
-
-    public createWidthPromise({order_number, description, categories}: ICreateItemDTO): Item{
-        const item = this.ormRepository.create({
-            order_number,
-            description,
-            categories
+    public async findByListId(list_id: string): Promise<Item[]>{
+        const items = await this.ormRepository.find({
+            where: {
+                list_id
+            }
         })
-        return item
+        return items
     }
-
-    
 }
 
 export default ItemRepository

@@ -26,6 +26,31 @@ class ProductRepository implements IProductRepository{
         return product
     }
 
+    public async findByCategories(categories:string[]): Promise<Product[]>{
+        
+        const products = await this.ormRepository
+        .createQueryBuilder('product')
+        .leftJoinAndSelect('product.categories', 'categories')
+        .leftJoinAndSelect('product.images_product', 'images_product')
+        .where("categories.name = Any(:categories)", {categories})
+        .getMany()  
+        return products
+    }
+
+    public async findOne(product_id:string): Promise<Product |undefined>{
+        const product = await this.ormRepository.findOne({
+            where: {
+                id: product_id
+            }
+        })
+        return product
+    }
+    public async save(product: Product):Promise<Product>{
+        const productSave = await this.ormRepository.save(product, {
+        })
+        return productSave
+    }
+
 
 }
 

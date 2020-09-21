@@ -54,6 +54,27 @@
 
    - **`POST/lists/`**: Esta rota deve fazer o cadastro de listas de materiais.
 
+   - **`POST/schools/`**: Esta rota deve fazer o cadastro de escola.
+
+   - **`GET/stores/cities`**: Retorna todas as cidades que contém pelo menos uma loja.
+
+   - **`GET/schools/cities?city={city}&state={state}`**: Retorna todas as escolas em determinada cidade.
+
+   - **`GET/lists/:school_id`**: Retorna todas as listas de uma determinada escola.
+
+   - **`GET/lists/:list_id?/products?STORE_ID={STORE_ID}`**: Retorna todas as listas de uma determinada escola.
+
+   - **`PATCH/products/:product_id/images`**: Esta rota deve fazer ser capaz de incluir/atualizar as images do produto.
+
+
+
+
+
+
+
+
+
+
 
 
      

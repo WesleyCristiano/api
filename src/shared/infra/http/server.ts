@@ -7,8 +7,10 @@ import 'shared/container'
 import '@shared/infra/typeorm'
 import routes from '@shared/infra/http/routes'
 import AppError from '@shared/erros/AppError'
+import uploads from '@config/uploads'
 
 const app = express()
+app.use('/files', express.static(uploads.uploadsFolder))
 app.use(express.json())
 const port = process.env.SERVER_PORT
 

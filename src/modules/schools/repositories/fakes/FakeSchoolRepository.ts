@@ -4,6 +4,7 @@ import Address from "@modules/addresses/infra/typeorm/entities/Address"
 import ISchoolRepository from '../ISchoolRepository'
 import ICreateSchoolDTO from '@modules/schools/dtos/ICreateSchoolDTO'
 import School from '@modules/schools/infra/typeorm/entities/School'
+import IFindAllSchoolsInCityDTO from '@modules/schools/dtos/IFindAllSchoolsInCityDTO'
 
 export default class FakeSchoolRepository implements ISchoolRepository {
     private schools: School[] = []
@@ -37,6 +38,16 @@ export default class FakeSchoolRepository implements ISchoolRepository {
     public async findById(school_id: string): Promise<School | undefined>{
         const school = this.schools.find(school=> school.id === school_id)
         return school
+    }
+
+    public async findByName(name: string): Promise<School | undefined>{
+        const school = this.schools.find(school=> school.name ===name)
+        return school
+    }
+
+    public async findAllSchoolInCity({city, state}:IFindAllSchoolsInCityDTO): Promise<School[]>{
+        const schools = this.schools.filter(school=> school.address.city === city && school.address.state ===state)
+        return schools
     }
 
 }

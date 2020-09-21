@@ -30,7 +30,7 @@ class School{
     @UpdateDateColumn()
     updated_at: Date
 
-    @OneToOne(type=>Address, {
+    @OneToOne(()=>Address, address=> address , {
         cascade: ['insert', 'update', 'soft-remove'],
         onDelete: 'SET NULL',
         onUpdate: "CASCADE",

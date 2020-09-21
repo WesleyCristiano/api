@@ -36,6 +36,7 @@ class Item{
     list: List
 
     @ManyToMany(()=>Category, {
+        eager: true,
         cascade: true,
         onDelete: "CASCADE",
         onUpdate: 'CASCADE'

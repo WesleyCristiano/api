@@ -47,4 +47,9 @@ export default class FakeStoreRepository implements IStoreRepository {
         return stores
     }
 
+    public async findAllAddress(): Promise<Store[]>{
+        const stores = this.stores
+        return stores
+    }
+
 }

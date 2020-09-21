@@ -7,10 +7,12 @@ import {
     ManyToOne, 
     JoinColumn, 
     ManyToMany, 
-    JoinTable
+    JoinTable,
+    OneToMany
 } from 'typeorm'
 import Store from '@modules/stores/infra/typeorm/entities/Store';
 import Category from '@modules/categories/infra/typeorm/entities/Category';
+import ImageProduct from './ImageProduct';
 
 @Entity('products')
 class Product{
@@ -62,5 +64,12 @@ class Product{
         }
     })
     categories: Category[]
+
+    @OneToMany(()=> ImageProduct, image=>image.product, {
+        eager: true,
+        cascade: true,
+        nullable:true
+    })
+    images_product: ImageProduct[]
 }
 export default Product

@@ -43,6 +43,9 @@ class CreateStoreService{
         if(storeAlreadyExisting){
             throw new AppError('Already exists an store with this email or cnpj')
         }
+        if(!address){
+            throw new AppError('The store must be a valid address')
+        }
 
         const allStoresIncity = await this.storeRepository.findAllInCity({
             city: address.city, state: address.state})
@@ -54,6 +57,8 @@ class CreateStoreService{
                 }
             })
         }
+
+       
         
         const storeAddress = this.addressRepositoy.create(address)
 

@@ -32,6 +32,7 @@ class List{
     school: School
 
     @OneToMany(()=> Item, item=> item.list, {
+        
         cascade: true
     } )
     items: Item[]

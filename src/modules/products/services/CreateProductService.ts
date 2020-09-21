@@ -41,7 +41,7 @@ class CreateProductService{
         if(productCategories.length < 1){
             throw new AppError('the product must have at least one category')
         }
-
+        
         const product = await this.productRepository.create({
             name, 
             store_id, 

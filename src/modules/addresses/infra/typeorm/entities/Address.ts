@@ -7,6 +7,7 @@ import {
     OneToOne
 } from 'typeorm'
 import Store from '@modules/stores/infra/typeorm/entities/Store';
+import School from '@modules/schools/infra/typeorm/entities/School';
 
 @Entity('addresses')
 class Address{
@@ -44,6 +45,9 @@ class Address{
 
     @UpdateDateColumn()
     updated_at: Date;
+
+    @OneToOne(()=>School, school=> school.address)
+    school: School
     
 }
 

@@ -47,6 +47,7 @@ class Store{
         cascade: ['insert', 'update', 'soft-remove'],
         onDelete: 'SET NULL',
         onUpdate: "CASCADE",
+        eager: true
     })
     @JoinColumn({
         name: 'address_id',

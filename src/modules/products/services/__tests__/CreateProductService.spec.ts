@@ -40,6 +40,7 @@ describe('CreateProduct', ()=>{
             quantity: 100,
             price: 3.45,
             categories: []})).rejects.toBeInstanceOf(AppError)
+            
     })
 
     it('should be able to create a new product with the same name of other product', async ()=>{

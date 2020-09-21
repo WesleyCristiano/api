@@ -13,14 +13,13 @@ class CategoryRepository implements ICategoryRepository{
     }
 
     public async create({name}: ICreateCategoryDTO): Promise<Category>{
+        const categoryExists = await this.ormRepository.findOne({name})
+        if(categoryExists){
+            return categoryExists
+        }
         const category = this.ormRepository.create({name})
         await this.ormRepository.save(category)
         return category;
-    }
-
-    public createWithoutPromise({name}: ICreateCategoryDTO): Category{
-        const category = this.ormRepository.create({name})
-        return category
     }
 
     public async findByName(name: string): Promise<Category | undefined>{

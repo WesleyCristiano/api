@@ -4,6 +4,7 @@ import IStoreRepository from '@modules/stores/repositories/IStoreRepository'
 import ICreateStoreDTO from '@modules/stores/dtos/ICreateStoreDTO'
 import IFindStoreWithSameDataDTO from '@modules/stores/dtos/IFindStoreWithSameDataDTO'
 import IFindAllInCityDTO from '@modules/stores/dtos/IFindAllInCityDTO'
+import Address from '@modules/addresses/infra/typeorm/entities/Address'
 
 class StoreRepository implements IStoreRepository{
 
@@ -39,6 +40,10 @@ class StoreRepository implements IStoreRepository{
         return stores    
     }
 
+    public async findAllAddress(): Promise<Store[]>{
+        const stores = await this.ormRepository.find()
+        return stores
+    }
 }
 
 export default StoreRepository
